@@ -15,3 +15,5 @@ def crear_rutas(api):
     api.add_resource(Login, '/login')
 
     api.add_resource(CrearCuenta, '/singup')
+
+    api.add_resource(SeccionIniciada, '/inicio')

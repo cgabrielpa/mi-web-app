@@ -126,16 +126,17 @@
           <!-- =========================
                FORM
           ========================== -->
-          <form class="mt-6 space-y-4" onsubmit="event.preventDefault(); alert('Demo: cuenta creada ☕🤎');">
+          <form class="mt-6 space-y-4" action="/singup" method="post">
             <!-- Nombre -->
             <div class="space-y-2">
               <label class="text-sm text-zinc-300" for="name">Nombre</label>
               <input
-                id="name"
-                type="text"
-                required
-                placeholder="Tu nombre"
-                class="w-full rounded-2xl bg-black/60 px-4 py-3 text-sm text-stone-100 placeholder:text-zinc-500 ring-1 ring-white/10 focus:outline-none focus:ring-2 focus:ring-amber-500/60"
+               name="nombre"
+               id="name"
+               type="text"
+               required
+               placeholder="Tu nombre"
+               class="w-full rounded-2xl bg-black/60 px-4 py-3 text-sm text-stone-100 placeholder:text-zinc-500 ring-1 ring-white/10 focus:outline-none focus:ring-2 focus:ring-amber-500/60"
               />
             </div>
 
@@ -143,6 +144,7 @@
             <div class="space-y-2">
               <label class="text-sm text-zinc-300" for="email">Correo</label>
               <input
+                name="correo"
                 id="email"
                 type="email"
                 required
@@ -155,6 +157,7 @@
             <div class="space-y-2">
               <label class="text-sm text-zinc-300" for="password">Contraseña</label>
               <input
+                name="password"
                 id="password"
                 type="password"
                 required
@@ -167,6 +170,7 @@
             <!-- Términos -->
             <div class="flex items-start gap-3">
               <input
+                name="terminos"
                 id="terms"
                 type="checkbox"
                 required
