@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Inicio — Cafetería</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- ✅ TAILWIND CDN (OBLIGATORIO) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="min-h-screen bg-[#2b1d14] text-[#f5efe6]">
+
+  <!-- =========================
+       CONTENEDOR PRINCIPAL
+  ========================== -->
+  <main class="mx-auto max-w-6xl px-6 py-12">
+
+    <!-- =========================
+         HEADER USUARIO
+    ========================== -->
+    <div class="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
+      <div>
+        <p class="text-sm text-[#d6c3ad]">Bienvenido de nuevo ☕</p>
+        <h1 class="text-4xl font-semibold tracking-tight">
+          Gabriel, ¿qué se te antoja hoy?
+        </h1>
+      </div>
+
+      <div class="flex items-center gap-3">
+        <span class="rounded-full bg-[#f5efe6]/10 px-4 py-2 text-sm ring-1 ring-[#f5efe6]/20">
+          Nivel: Coffee Lover
+        </span>
+
+        <a
+          href="/logout"
+          class="rounded-xl bg-[#f5efe6] px-4 py-2 text-sm font-semibold text-[#2b1d14] hover:bg-[#e8ddcf]"
+        >
+          Cerrar sesión
+        </a>
+      </div>
+    </div>
+
+    <!-- =========================
+         ACCIONES RÁPIDAS
+    ========================== -->
+    <section class="mt-10 grid gap-4 md:grid-cols-3">
+
+      <!-- Pedido rápido -->
+      <div class="rounded-2xl bg-[#3a261a] p-6 ring-1 ring-[#f5efe6]/15">
+        <p class="text-sm text-[#d6c3ad]">Pedido rápido</p>
+        <h3 class="mt-2 text-lg font-semibold">Repetir último café</h3>
+        <p class="mt-1 text-sm text-[#cbb8a3]">Latte vainilla oscuro</p>
+
+        <button class="mt-4 w-full rounded-xl bg-[#f5efe6] px-4 py-2 text-sm font-semibold text-[#2b1d14] hover:bg-[#e8ddcf]">
+          Ordenar
+        </button>
+      </div>
+
+      <!-- Favoritos -->
+      <div class="rounded-2xl bg-[#3a261a] p-6 ring-1 ring-[#f5efe6]/15">
+        <p class="text-sm text-[#d6c3ad]">Tus favoritos</p>
+        <h3 class="mt-2 text-lg font-semibold">Bebidas guardadas</h3>
+
+        <ul class="mt-2 space-y-1 text-sm text-[#cbb8a3]">
+          <li>• V60 frutal</li>
+          <li>• Cold brew</li>
+          <li>• Americano intenso</li>
+        </ul>
+
+        <button class="mt-4 w-full rounded-xl bg-[#f5efe6]/10 px-4 py-2 text-sm ring-1 ring-[#f5efe6]/20 hover:bg-[#f5efe6]/20">
+          Ver todos
+        </button>
+      </div>
+
+      <!-- Recompensas -->
+      <div class="rounded-2xl bg-[#3a261a] p-6 ring-1 ring-[#f5efe6]/15">
+        <p class="text-sm text-[#d6c3ad]">Recompensas</p>
+        <h3 class="mt-2 text-lg font-semibold">Puntos acumulados</h3>
+
+        <p class="mt-2 text-4xl font-bold">120</p>
+        <p class="mt-1 text-sm text-[#cbb8a3]">
+          20 pts para un café gratis
+        </p>
+      </div>
+
+    </section>
+
+    <!-- =========================
+         MENÚ RECOMENDADO
+    ========================== -->
+    <section class="mt-14">
+      <h2 class="text-2xl font-semibold">Recomendado para ti</h2>
+      <p class="mt-1 text-sm text-[#d6c3ad]">
+        Basado en tus pedidos anteriores
+      </p>
+
+      <div class="mt-6 grid gap-4 md:grid-cols-3">
+        <div class="rounded-2xl bg-[#f5efe6] p-5 text-[#2b1d14]">
+          <h4 class="font-semibold">Latte cremoso</h4>
+          <p class="mt-1 text-sm text-[#5a3e2b]">
+            Espresso + leche vaporizada
+          </p>
+          <p class="mt-3 font-semibold">$65</p>
+        </div>
+
+        <div class="rounded-2xl bg-[#f5efe6] p-5 text-[#2b1d14]">
+          <h4 class="font-semibold">V60 artesanal</h4>
+          <p class="mt-1 text-sm text-[#5a3e2b]">
+            Notas dulces y balanceadas
+          </p>
+          <p class="mt-3 font-semibold">$75</p>
+        </div>
+
+        <div class="rounded-2xl bg-[#f5efe6] p-5 text-[#2b1d14]">
+          <h4 class="font-semibold">Panqué de café</h4>
+          <p class="mt-1 text-sm text-[#5a3e2b]">
+            Suave, húmedo y aromático
+          </p>
+          <p class="mt-3 font-semibold">$45</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+</body>
+</html>
