@@ -5,9 +5,7 @@ from flask import make_response, render_template
 #vamos a crear recursos :_ para nosotros poder crear
 # recursos lo haremos atravez de clases y objetos
 
-class hello_world(Resource):
-    def get(self): #los recursos van a poder ejecutar dos acciones -> metodos
-        return {'hello': 'world'}
+
 
 class PantallaInicio(Resource):
     def get(self):
@@ -20,3 +18,18 @@ class PantallaInicio(Resource):
 class Despedida(Resource):
     def get(self):
         return 'Adios'
+
+class Login(Resource):
+    def get(self):
+        contenido = render_template('login.html')
+        return make_response(contenido)
+
+    #no tenemois la manera de soportar un post
+
+    def post(self):
+        print('Esto se ejecuta cuando se llama a un post')
+
+class CrearCuenta(Resource):
+    def get(self): #los recursos van a poder ejecutar dos acciones -> metodos
+        contenido = render_template('crearcuenta.html')
+        return make_response(contenido)
