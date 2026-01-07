@@ -1,5 +1,6 @@
 from flask import Flask, make_response, redirect, render_template, request
 
+#Desde flask_restful importamos la clase api y la clase resource
 from flask_restful import Api, Resource
 from rutas import crear_rutas
 
